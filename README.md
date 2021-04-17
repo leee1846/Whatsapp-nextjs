@@ -2,10 +2,10 @@
 
 ### 기술스택
 
--Nextjs
--Styled-components
--Firebase
--Material-ui
+-Nextjs</br>
+-Styled-components</br>
+-Firebase</br>
+-Material-ui</br>
 
 ### 설명
 
