@@ -14,7 +14,7 @@ const Sidebar = () => {
   const [user] = useAuthState(auth);
   const userChatRef = db
     .collection("chat")
-    .where("users", "array-contains", user.email);
+    .where("users", "array-contains", user?.email);
   const [chatsSnapshot] = useCollection(userChatRef);
 
   const createChat = () => {
@@ -42,7 +42,7 @@ const Sidebar = () => {
   return (
     <Styled.Container>
       <Styled.Header>
-        <Styled.UserAvatar onClick={() => auth.signOut()} />
+        <Styled.UserAvatar onClick={() => auth.signOut()} src={user.photoURL} />
         <Styled.IconsContainer>
           <IconButton>
             <ChatIcon />
