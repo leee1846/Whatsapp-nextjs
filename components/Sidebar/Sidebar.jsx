@@ -1,4 +1,5 @@
 import * as Styled from "./Sidebar.style";
+import * as EmailValidator from "email-validator";
 //icons
 import MoreVertIcon from "@material-ui/icons/MoreVert";
 import ChatIcon from "@material-ui/icons/Chat";
@@ -10,6 +11,10 @@ const Sidebar = () => {
     const input = prompt("함께할 유저의 이메일을 작성하세요.");
 
     if (!input) return;
+
+    if (EmailValidator.validate(input)) {
+      // db로 적용해야할부분
+    }
   };
 
   return (
