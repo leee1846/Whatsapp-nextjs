@@ -5,6 +5,7 @@ import MoreVertIcon from "@material-ui/icons/MoreVert";
 import ChatIcon from "@material-ui/icons/Chat";
 import { IconButton } from "@material-ui/core";
 import SearchIcon from "@material-ui/icons/Search";
+import { auth } from "../../firebase";
 
 const Sidebar = () => {
   const createChat = () => {
@@ -20,7 +21,7 @@ const Sidebar = () => {
   return (
     <Styled.Container>
       <Styled.Header>
-        <Styled.UserAvatar />
+        <Styled.UserAvatar onClick={() => auth.signOut()} />
         <Styled.IconsContainer>
           <IconButton>
             <ChatIcon />
