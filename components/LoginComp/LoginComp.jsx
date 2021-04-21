@@ -15,7 +15,7 @@ const LoginComp = () => {
       </Head>
 
       <Styled.LoginContainer>
-        <Styled.Logo src='http://pngimg.com/uploads/whatsapp/whatsapp_PNG13.png' />
+        <Styled.Logo src='http://pngimg.com/uploads/whatsapp/whatsapp_PNG13.png' alt="logo"/>
         <Button onClick={signin} variant='outline'>
           Sign in with Google
         </Button>
