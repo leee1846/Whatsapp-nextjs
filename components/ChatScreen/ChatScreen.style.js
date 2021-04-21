@@ -31,6 +31,33 @@ export const HeaderInformation = Styled.div`
 
 export const HeaderIcons = Styled.div``;
 
-export const MessageContainer = Styled.div``;
+export const MessageContainer = Styled.div`
+  padding:30px;
+  background-color:#e5ded8;
+  min-height:90vh;
+`;
 
 export const EndOfMessage = Styled.div``;
+
+export const InputContainer = Styled.form`
+  display:flex;
+  align-items:center;
+  padding: 10px;
+  position:sticky;
+  bottom:0;
+  background-color:white;
+  z-index:100;
+`;
+
+export const Input = Styled.input`
+  flex:1;
+  outline:0;
+  border:none;
+  border-radius:10px;
+  align-items:center;
+  background-color:whitesmoke;
+  padding: 20px;
+  margin-left:15px;
+  margin-right:15px;
+
+`;
